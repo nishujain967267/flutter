@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn/widgets/drawer.dart';
 
 //material me hota hai child aur scaffold me hota hai body aur app bar
 class HomePage extends StatelessWidget {
@@ -15,7 +16,7 @@ class HomePage extends StatelessWidget {
           child: Text("welcome"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

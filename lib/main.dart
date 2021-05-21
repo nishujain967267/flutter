@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       //theme
       themeMode: ThemeMode.light,
       theme: ThemeData(
@@ -22,10 +23,10 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
 
       //routing
-      initialRoute: '/',
+      initialRoute: MyRoutes.homeRoute,
       routes: {
-        "/": (context) =>
-            LoginPage(), //jo / pe chalta hai wahi dikhta hai by default mainly starting me.
+        // "/": (context) =>
+        //     LoginPage(), //jo / pe chalta hai wahi dikhta hai by default mainly starting me.
         MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.homeRoute: (context) => HomePage()
       },
